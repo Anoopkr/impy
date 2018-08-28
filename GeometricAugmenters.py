@@ -30,7 +30,7 @@ Log:
 		Randomly rotates the bounding boxes.
 """
 # Libraries
-from interface import implements
+from zope.interface import implementer
 import math
 import random
 import cv2
@@ -51,7 +51,7 @@ try:
 except:
 	from AssertDataTypes import *
 
-class GeometricAugmenters(implements(GeometricAugmentersMethods)):
+class GeometricAugmenters(object):
 	"""
 	GeometricAugmenters class. This class implements a set of data augmentation
 	tools for bouding boxes.

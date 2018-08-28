@@ -35,7 +35,7 @@ Log:
 		Sets pixels to zero with probability P.
 """
 # Libraries
-from interface import implements
+from zope.interface import implementer
 import math
 import random
 import cv2
@@ -61,7 +61,7 @@ try:
 except:
 	from AssertDataTypes import *
 
-class BoundingBoxAugmenters(implements(BoundingBoxAugmentersMethods)):
+class BoundingBoxAugmenters(object):
 	"""
 	BoundingBoxAugmenters class. This class implements a set of data augmentation
 	tools for bouding boxes.

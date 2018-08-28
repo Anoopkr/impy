@@ -36,7 +36,6 @@ Log:
 		of color's space PCA.
 """
 # Libraries
-from interface import implements
 import math
 import random
 import cv2
@@ -57,7 +56,7 @@ try:
 except:
 	from AssertDataTypes import *
 
-class ColorAugmenters(implements(ColorAugmentersMethods)):
+class ColorAugmenters(object):
 	"""
 	ImageAugmenters class. This class implements a set of data augmentation
 	tools for bouding boxes.

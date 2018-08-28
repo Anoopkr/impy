@@ -6,7 +6,7 @@ Description: Preprocess methods for the ImageLocalization
 class.
 """
 # Libraries
-from interface import Interface
+from zope.interface.interface import Interface
 
 class ObjectDetectionDatasetStatisticsMethods(Interface):
 	

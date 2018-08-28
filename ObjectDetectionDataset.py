@@ -8,7 +8,7 @@ import os
 import json
 import math
 import numpy as np
-from interface import implements
+from zope.interface import implementer
 from tqdm import tqdm
 
 try:
@@ -59,8 +59,8 @@ except:
 prep = ImagePreprocess()
 dataAssertion = AssertDataTypes()
 
-class ObjectDetectionDataset(implements(ObjectDetectionDatasetPreprocessMethods, \
-																ObjectDetectionDatasetStatisticsMethods)):
+@implementer(ObjectDetectionDatasetPreprocessMethods, ObjectDetectionDatasetStatisticsMethods)
+class ObjectDetectionDataset():
 
 	def __init__(self, imagesDirectory = None, annotationsDirectory = None, databaseName = None):
 		"""

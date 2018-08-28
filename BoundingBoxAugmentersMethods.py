@@ -6,7 +6,7 @@ Description: Data augmentation methods used for bounding box
 labels.
 """
 # Libraries
-from interface import Interface
+from zope.interface.interface import Interface
 
 class BoundingBoxAugmentersMethods(Interface):
 	

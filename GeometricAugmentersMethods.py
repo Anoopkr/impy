@@ -4,7 +4,7 @@ class: ImageAugmenters
 Author: Rodrigo Loza
 Description: Common data augmentation methods for images.
 """
-from interface import Interface
+from zope.interface.interface import Interface
 
 class GeometricAugmentersMethods(Interface):
 
